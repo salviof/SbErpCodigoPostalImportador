@@ -1,7 +1,7 @@
 package br.org.coletivoJava.fw.erp.implementacao.codigopostalbr;
 
 import java.util.List;
-import com.super_bits.modulosSB.SBCore.modulos.objetos.registro.Interfaces.basico.cep.EntidadeLocal;
+import com.super_bits.modulosSB.SBCore.modulos.objetos.entidade.basico.cep.EntidadeLocal;
 import br.org.coletivoJava.fw.api.erp.codigopostalbr.CodigoPostalBRRepublicaVirutal;
 import br.org.coletivoJava.fw.api.erp.codigopostalbr.InfoRespostaCepWebService;
 
