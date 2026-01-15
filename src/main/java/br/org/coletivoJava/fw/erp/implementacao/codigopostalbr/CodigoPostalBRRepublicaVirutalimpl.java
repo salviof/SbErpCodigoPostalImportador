@@ -1,15 +1,16 @@
 package br.org.coletivoJava.fw.erp.implementacao.codigopostalbr;
 
 import java.util.List;
-import com.super_bits.modulosSB.SBCore.modulos.objetos.entidade.basico.cep.EntidadeLocal;
+
 import br.org.coletivoJava.fw.api.erp.codigopostalbr.CodigoPostalBRRepublicaVirutal;
 import br.org.coletivoJava.fw.api.erp.codigopostalbr.InfoRespostaCepWebService;
+import com.super_bits.modulosSB.SBCore.modulos.objetos.entidade.basico.cep.ComoLocal;
 
 @CodigoPostalBRRepublicaVirutal
 public class CodigoPostalBRRepublicaVirutalimpl implements br.org.coletivoJava.fw.api.erp.codigoPostal.br.ItfCodigoPostalBR {
 
     @Override
-    public boolean configuraEndereco(String cep, EntidadeLocal pLocal) {
+    public boolean configuraEndereco(String cep, ComoLocal pLocal) {
         return UtilCRCCEP.configuraEndereco(cep, pLocal);
     }
 
@@ -19,12 +20,12 @@ public class CodigoPostalBRRepublicaVirutalimpl implements br.org.coletivoJava.f
     }
 
     @Override
-    public boolean configurarPosicaoGeogafica(EntidadeLocal pLocal) {
+    public boolean configurarPosicaoGeogafica(ComoLocal pLocal) {
         throw new UnsupportedOperationException("O METODO AINDA N\u00c3O FOI IMPLEMENTADO.");
     }
 
     @Override
-    public boolean contribuirCadastroNovoEndereco(EntidadeLocal pLocal) {
+    public boolean contribuirCadastroNovoEndereco(ComoLocal pLocal) {
         throw new UnsupportedOperationException("O METODO AINDA N\u00c3O FOI IMPLEMENTADO.");
     }
 
